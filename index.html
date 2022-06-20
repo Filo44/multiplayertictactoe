@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <div id="container">
+        <div class="Title">Tic Tac Toe</div>
+        <div class="Subtitle">By ...</div>
+        
+            <div class="tablecontainer">
+                <table>
+                    <tr>
+                        <td class="something2"><div class="something"></div></td>
+                        <td class="something2"><div class="something"></div></td>
+                        <td class="something2"><div class="something"></div></td>
+                    </tr>
+                    <tr>
+                        <td class="something2"><div class="something"></div></td>
+                        <td class="something2"><div class="something"></div></td>
+                        <td class="something2"><div class="something"></div></td>
+                    </tr>
+                    <tr>
+                        <td class="something2"><div class="something"></div></td>
+                        <td class="something2"><div class="something"></div></td>
+                        <td class="something2"><div class="something"></div></td>
+                    </tr>
+                </table>
+            </div>
+            <div id="greyover">
+                <div id="won">
+            </div>
+                 <button onclick="document.location.reload(true)" id="greybutton">Reset board</button>
+            </div>
+            <div class="sidebar">
+                <div id="playerCount">d</div>
+                <div class="subcontainer">
+                </div>
+                <input type="text" placeholder="Username" id="usernameInput">
+                <button id="usernameBtn">Set username</button>
+            </div>
+            <div id="popup">
+                <div id="popupText">Username is chalanging you do you accept the duel?</div>
+                <button id="acceptDuel" class="requestButton">Yes</button>
+                <button id="denyDuel" class="requestButton">No</button>
+            </div>
+    
+    <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-database.js"></script>
+
+    <script>
+      const firebaseConfig = {
+  apiKey: "AIzaSyCIpTAw412YjDALIyRlbLgpX3RhtdbfoPI",
+  authDomain: "please-work-2a21d.firebaseapp.com",
+  databaseURL: "https://please-work-2a21d-default-rtdb.europe-west1.firebasedatabase.app",
+  projectId: "please-work-2a21d",
+  storageBucket: "please-work-2a21d.appspot.com",
+  messagingSenderId: "226142347631",
+  appId: "1:226142347631:web:1ff03efb2460e402b7089a"
+};
+      firebase.initializeApp(firebaseConfig);
+    </script>
+        <script  src="index.js"></script>
+        <link rel="stylesheet" href="index.css">
+</body>
+</html>
